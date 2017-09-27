@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
   <ul>
-    <li *ngFor="let team of teams; let i = index">
-      {{i}}.{{team.basketball}}
+    <li *ngFor="let team of teams; let l = last">
+      {{i}}.{{team.basketball}} <strong *ngIf="l"> Last entry in the list </strong>
     </li>
   </ul>
   `,
